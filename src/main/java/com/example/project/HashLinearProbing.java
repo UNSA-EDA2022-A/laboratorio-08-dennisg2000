@@ -38,7 +38,7 @@ public class HashLinearProbing {
         }
 
         for (int i = 0; i < hsize; i++) {
-            if (buckets[hash] == null || buckets[hash].getDNI() == AVAILABLE) {
+            if (buckets[hash] == null || buckets[hash].getDNI().equals(AVAILABLE)) {
                 buckets[hash] = key;
                 size++;
                 return;
@@ -131,14 +131,14 @@ public class HashLinearProbing {
     }
 
     public static void main (String[] args){
-        HashLinearProbing tb = new HashLinearProbing(10);
+        //HashLinearProbing tb = new HashLinearProbing(10);
 
-        Random rd = new Random();
+       // Random rd = new Random();
 
-        for(int i = 0; i < 5; i++){
+       // for(int i = 0; i < 5; i++){
             //tb.insertHash(rd.nextInt(100));
-        }
+       // }
 
-        tb.displayHashtable();        
+        //tb.displayHashtable();        
     }
 }
