@@ -32,6 +32,5 @@ public class Exercise1 {
 	    // Retorna NULL quando no se encontro el dni, y el nombre de la persona si lo encontro
 	    public String encontrarPersona(String dni){
 	    	return tb.findHash(dni);
-	        
 	    } 
 }
